@@ -37,7 +37,7 @@ class Application
   end
   
   def add_item(new_item)
-    if new_item in @@items
+    if @@items.include?(new_item)
       @@cart << new_item
     else
       resp.write "#{new_item} not found."

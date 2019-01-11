@@ -43,7 +43,7 @@ class Application
   def add_item(new_item)
     if @@items.include?(new_item)
       @@cart << new_item
-      "#{new_item} added to cart"
+      "added #{new_item}"
     else
       "#{new_item} not found."
     end

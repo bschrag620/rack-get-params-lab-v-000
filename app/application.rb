@@ -20,7 +20,7 @@ class Application
       end
     elsif req.path.match(/add/)
       new_item = req.params['q']
-      @@cart << new_item
+      add_item
     else
       resp.write "Path Not Found"
     end

@@ -23,6 +23,7 @@ class Application
         end
       end
     elsif req.path.match(/add/)
+      binding.pry
       new_item = req.params['q']
       resp.write add_item(new_item)
     else

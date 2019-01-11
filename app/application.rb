@@ -45,7 +45,7 @@ class Application
       @@cart << new_item
       "added #{new_item}"
     else
-      "#{new_item} not found."
+      "We don't have that item"
     end
   end
 end

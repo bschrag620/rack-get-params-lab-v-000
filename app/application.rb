@@ -24,7 +24,7 @@ class Application
       end
     elsif req.path.match(/add/)
       binding.pry
-      new_item = req.params['q']
+      new_item = req.params['item']
       resp.write add_item(new_item)
     else
       resp.write "Path Not Found"

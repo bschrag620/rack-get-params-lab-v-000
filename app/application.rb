@@ -41,5 +41,6 @@ class Application
       @@cart << new_item
     else
       resp.write "#{new_item} not found."
+    end
   end
 end
